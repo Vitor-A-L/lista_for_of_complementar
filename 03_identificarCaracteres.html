@@ -6,11 +6,21 @@
     */
 
     //Entrada
-
-
+    let word = prompt(`Informe uma palavra`).toUpperCase();
+    let soletrado = Array.from(word);
+    let vogal=[];
+    let consoantes=[];
     //Processamento
+    for(let verificar of soletrado){
+        if(verificar === "A" || verificar === "E" || verificar === "I" || verificar === "O" || verificar === "U"){
+            vogal.push(verificar);
+        }
+        else{
+            consoantes.push(verificar);
+        }
 
+    }
 
     //Saída
-
+    document.write(`Sua palavra tem: ${vogal.length} vogais e ${consoantes.length} consoantes`);
 </script>
