@@ -8,11 +8,18 @@
     */
 
     //Entrada
-
-
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let att = [];
     //Processamento
+    for (let verificar of nomes) {
+        verificar = verificar.replace("é", "e")
+        verificar = verificar.replace("á", "a")
+        verificar = verificar.replace("í", "i")
+        verificar = verificar.replace("ú", "u")
+        att.push(verificar);
+    }
 
 
     //Saída
-
+document.write(`Lista corrigida: ${att}`);
 </script>
